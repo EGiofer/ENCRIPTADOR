@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="encriptador.js"> </script>
+
+        <title> GIO FERREIRA - ENCRIPTADOR</title>
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/Logo.png" alt="Logo de Alura" class="logo">
+        </header>
+
+        <main>
+            <section class="primera">
+                
+                <div  class="encriptador">
+                    <textarea cols="30" rows="1" placeholder="Ingrese el texto aquí" class="texto-original" name="mensaje" onkeypress="return permite(event, 'car')"></textarea>
+                    <legend class="aviso"> <img src="imagenes/admiracion.png"> Solo letras minusculas y sin acentos</legend>
+
+                    <ul class="botones">
+                        <li> <button class="encriptar" onclick="encriptar()"> Encriptar </button></li>
+                        <li> <button class="desencriptar" onclick="desencriptar()" > Desencriptar </button>  </li>
+                    </ul>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="segunda">
+                <ul class="resultado">
+                    <li>
+                        <img src="imagenes/Muñeco 1x.png" alt="persona encriptador" class="persona" id="imgpersona">
+                        <p class="titulo" id="stitulo">Ningun mensaje fue encontrado</p>
+                        <p class="mensaje" id="smensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+
+                    </li>
+                </ul> 
+
+                <div class="resultado-encr" id="resultado-enc" style="display:none;"> 
+                    <textarea readonly class="textores" id="textoresultado"></textarea>
+                    <button class="btncopiar" onclick="copiar()">Copiar</button>
+                </div>   
+            </section>
+
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,323 @@
+/*
+    desarrollado por : Edward Giovanni Ferreira Fomeque
+    proyecto:  Alura - Oracle One
+    DICIEMBRE DE 2022
+
+    DESAFIO # 1 ENCRIPTADOR
+    Enfoque  desktop first
+    pantalla de 21 pulgadas
+*/
+
+
+
+
+
+body, .texto-original{
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    width: 100%; 
+
+}
+
+header, main, .primera, .segunda{
+    display: inline-block;
+
+}
+
+header{
+    vertical-align: top;
+}
+
+.logo{
+    margin: 40px 0 0 40px;
+}
+
+main{
+    width: 1700px;
+
+}
+
+.primera{
+    width: 75%;
+}
+
+.encriptador{
+    margin: 0 80px;
+}
+
+.texto-original{
+    margin-top: 168px;
+    margin-bottom: 570px;
+    font-size: 32px;
+    color: #0A3871;
+    padding: 5.5px 10px;
+    border: 1px;
+    outline: none;
+    resize: none; 
+    height: 1em;
+    scrollbar-width: 25px;
+    scrollbar-color: black;
+}
+
+
+.texto-original::placeholder{
+    color: #0A3871;
+}
+
+.aviso{
+    color: #495057;
+    font-size: 12px;
+    margin-bottom: 16px;
+    
+}
+
+.botones li{
+    display: inline-block;
+}
+
+.encriptar, .desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.encriptar{
+    margin-right: 24px;
+    background: #0A3871;
+    color: white;
+}
+
+.desencriptar{
+    background: #d8dfe8;
+    color: #0A3871;
+}
+
+
+
+.segunda{
+    vertical-align: top;
+    margin-top: 40px;
+    height: 874px;
+    width: 400px;
+    background: white;
+    border-radius: 32px;
+}
+
+.resultado{
+    margin:  0 32px;
+    vertical-align: middle; 
+}
+
+.segunda img{
+    margin-top: 264px;
+}
+
+
+.resultado p, .resultado li{
+    text-align: center;
+    width: 100%;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.mensaje{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.resultado-encr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.textores{
+    width: 90%;
+    margin-top: 72px;
+    padding: 16px;
+    border: none;
+    font-size: 24px;
+    font-family: 'Inter';
+    color: #495057;
+
+}
+
+.btncopiar{
+    display: inline;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    background: d8dfe8;
+    margin-top: 600px;    
+}
+
+
+
+/*  -------------------------------------------  RESPONSIVE  -----------------------------------------  */
+
+
+/* ------------------------- responsive para pantalla de 14"  ----------------------------------------  */
+
+@media screen and (max-width: 1560px){
+
+  .primera{
+        width: 52%;
+    }
+
+    .texto-original{
+        margin-bottom: 170px;
+    }
+
+
+
+    .segunda{
+        margin-top: -48px;
+        height: 550px;
+    }
+
+    .segunda img{
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+
+    .btncopiar{
+        margin-top: 300px;
+    }
+
+}
+
+/* ------------------------- responsive para Tablet   ----------------------------------------  */
+
+@media screen and (max-width: 768px){
+
+    header, main, .primera, .segunda, .encriptador{
+        width: 100%;
+    }
+
+
+    .encriptador{
+        margin-top: auto;
+    }
+
+    .texto-original{
+        margin-bottom: 250px;
+    }
+
+    .encriptar, .desencriptar{
+        width: 310px;
+        height: 67px;
+        border-radius: 24px;
+        font-size: 16px;
+    }
+
+    .encriptar{
+        margin-right: 12px;
+        background: #0A3871;
+        color: white;
+    }
+
+    .desencriptar{
+        background: #d8dfe8;
+        color: #0A3871;
+    }
+
+    .segunda{
+        width: 70%;
+        height: 120px;
+        padding: 3em;
+        display: inline-block;
+        margin-top: 75px;
+        margin-left: 80px;
+        margin-right: auto;
+        vertical-align: middle;
+    }
+
+    .segunda img{
+        display: none;
+    }
+
+    .resultado-encr, .textores{
+        margin-top: -20px ;
+    }
+
+    .btncopiar{
+
+        margin-top: 10px;
+    }
+
+}
+
+/* ------------------------- responsive para celular   ----------------------------------------  */
+
+@media screen and (max-width: 375px){
+
+    .logo{
+        margin: 40px 0 0 16px;
+    }
+
+    .encriptador{
+        margin: 0 16px;
+        width: auto;
+    }
+
+
+    .texto-original{
+        margin-top: 152px;
+        margin-bottom: 251px;
+        width: 100%;
+    }
+
+
+    .encriptar, .desencriptar{
+        width: 343px;
+        height: 67px;
+        border-radius: 24px;
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+
+    .segunda{
+        width: 82%;
+        height: 200px;
+        padding: 1em;
+        display: inline-block;
+        margin-top: 45px;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+
+    .segunda img{
+        display: none;
+    }
+
+    .titulo{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 40spx;
+    }
+
+    .mensaje{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .resultado-encr, .textores{
+        margin-top: -5px ;
+        text-align: center;
+    }
+
+    .btncopiar{
+        width: 279px;
+        margin-top: -30px;
+        border-radius: 15px;
+    }
+}
